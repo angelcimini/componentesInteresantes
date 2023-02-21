@@ -1,0 +1,40 @@
+.miInput {
+    display: none;
+}
+
+.elSpan {
+    display: inline-block;
+    position: relative;
+    height: 1.2em;
+    width: 1.2em;
+    background: rgb(99, 234, 230);
+    border-radius: 100%;
+    transition: .6s ease;
+}
+
+.etiqueta {
+    cursor: pointer;
+}
+
+.etiqueta .miInput:checked ~ .elSpan {
+    background: rgb(88, 224, 46);
+    box-shadow: 1px 1px 4px 1px rgb(0, 0, 0), 0px 0px 8px 2px rgb(0, 0, 255);
+}
+
+.elSpan:after {
+    content: '';
+    position: absolute;
+    border: solid rgb(255, 255, 255);
+    border-width: 0 0.2em 0.2em 0;
+    transform: rotate(45deg);
+    width: 0.2em;
+    height: .4em;
+    left: 0.4em;
+    top: 0.25em;
+    opacity: 0;
+    transition: .6s ease;
+}
+
+.etiqueta .miInput:checked ~ .elSpan:after {
+    opacity: 1;
+}

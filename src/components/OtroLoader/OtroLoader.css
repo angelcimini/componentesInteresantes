@@ -1,0 +1,42 @@
+.otroLoader {
+    margin: 16px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation: spin 1.8s linear infinite;
+    position: relative;
+}
+
+.otroLoader::before,
+.otroLoader::after {
+    content: '';
+    position: absolute;
+    border-radius: inherit;
+}
+
+.otroLoader::before {
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(0deg,
+        rgb(115, 244, 98) 0%,
+        rgb(0, 153, 255) 100%
+    );
+    top: 0%;
+    left: 0%;
+}
+
+.otroLoader::after {
+    width: 95%;
+    height: 95%;
+    background-color: rgb(255, 243, 215);
+    top: 0%;
+    left: 0%;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+

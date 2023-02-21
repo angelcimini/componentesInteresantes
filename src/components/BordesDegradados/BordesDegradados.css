@@ -1,0 +1,29 @@
+.border-container {
+    --border-color: linear-gradient(
+        to right,
+        tomato 0%,
+        gold 100%
+    );
+    --miCard-color: #0d288a;
+}
+
+.miCard {
+    background: var(--border-color);
+    aspect-ratio: 10/16;
+    width: 150px;
+    padding: 5px;
+    border-radius: 16px;
+    position: relative;
+    margin: auto;
+}
+
+.miCard-body {
+    background: var(--miCard-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    color: white;
+}

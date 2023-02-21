@@ -1,5 +1,7 @@
 .App {
+  padding: 10px;
   text-align: center;
+  background-color: rgb(255, 243, 215);
 }
 
 .App-logo {
@@ -35,4 +37,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.component-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1em;
+  margin: 1em;
+}
+
+.misComponentes {
+  position: static;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0px;
+  margin: auto;
 }
